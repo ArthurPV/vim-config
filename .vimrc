@@ -1,6 +1,6 @@
 " File: .vimrc
 " Author: ArthurPV
-" Year: 2020
+" Year: 2025
 
 " All plugins I am using
 
@@ -34,9 +34,6 @@ Plug 'wincent/ferret'
 " Run your tests at the speed thought
 Plug 'janko-m/vim-test'
 
-" Intellisense engine for Vim8 & Neovim, full language server protocol support as VSCode
-" Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-
 " Multiple cursor
 Plug 'terryma/vim-multiple-cursors'
 
@@ -58,7 +55,6 @@ Plug 'morhetz/gruvbox'
 Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'vim-crystal/vim-crystal'
-" Plug 'itchyny/lightline.vim'
 Plug 'ArthurPV/vim-lily' 
 Plug 'ArthurPV/ci.vim' 
 Plug 'rhysd/vim-llvm'
@@ -85,23 +81,15 @@ syntax on
 set termguicolors
 set relativenumber
 set nu
-" set encoding=ISO-8859-1
 set encoding=UTF-8
 set modifiable
 filetype on
 set tabstop=4
 set laststatus=2
 set shiftwidth=4
-" set spell spelllang=en_us
 filetype plugin on
-" set mouse=a
 colorscheme void
-" colorscheme wal
-" colorscheme tokyonight
-" colorscheme gruvbox
 set background=dark
-" let g:tokyonight_style = 'day'
-" let g:tokyonight_enable_italic = 1
 
 " Command
 let mapleader = ","
@@ -149,36 +137,3 @@ nnoremap <C-q>e :!elixir %:r.ex %<Enter>
 let g:minimap_width = 10
 let g:minimap_auto_start = 1
 let g:minimap_auto_start_win_enter = 1
-
-" Syntax highlighting for vim-devicons
-
-" let s:colors = {
-"   \ 'brown'       : "905532",
-"   \ 'aqua'        : "63c7dd",
-"   \ 'blue'        : "527a9a",
-"   \ 'darkBlue'    : "0a0672",
-"   \ 'purple'      : "887893",
-"   \ 'lightPurple' : "d3badd",
-"   \ 'red'         : "d15151",
-"   \ 'beige'       : "efe3ce",
-"   \ 'yellow'      : "b39f11",
-"   \ 'orange'      : "eab654",
-"   \ 'darkOrange'  : "ae6b3e",
-"   \ 'pink'        : "dc9be8",
-"   \ 'salmon'      : "ffc796",
-"   \ 'green'       : "8fac74",
-"   \ 'lightGreen'  : "9fbf97",
-"   \ 'white'       : "d8d8d8"
-"   \ }
-
-" let g:lightline = {
-"       \ 'colorscheme': 'gruvbox',
-"       \ 'active': {
-"       \   'right': [ [ 'lineinfo' ],
-"       \              [ 'percent' ],
-"       \              [ 'fileformat', 'fileencoding', 'filetype', 'charvaluehex' ] ]
-"       \ },
-"       \ 'component': {
-"       \   'charvaluehex': '0x%B'
-"       \ },
-"       \ }
